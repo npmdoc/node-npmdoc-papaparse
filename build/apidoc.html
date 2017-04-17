@@ -78,6 +78,15 @@
 
         <li>
 
+            <a class="apidocElementLiA" href="#apidoc.element.papaparse.Gruntfile">
+            function <span class="apidocSignatureSpan">papaparse.</span>Gruntfile
+            <span class="apidocSignatureSpan">(grunt)</span>
+            </a>
+
+        </li>
+
+        <li>
+
             <a class="apidocElementLiA" href="#apidoc.element.papaparse.NetworkStreamer">
             function <span class="apidocSignatureSpan">papaparse.</span>NetworkStreamer
             <span class="apidocSignatureSpan">(config)</span>
@@ -239,6 +248,19 @@
 
     </ol></li>
 
+    <li class="apidocModuleLi"><a href="#apidoc.module.papaparse.Gruntfile">module papaparse.Gruntfile</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.papaparse.Gruntfile.Gruntfile">
+            function <span class="apidocSignatureSpan">papaparse.</span>Gruntfile
+            <span class="apidocSignatureSpan">(grunt)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
     <li class="apidocModuleLi"><a href="#apidoc.module.papaparse.NetworkStreamer">module papaparse.NetworkStreamer</a><ol>
 
         <li>
@@ -259,6 +281,32 @@
             <a class="apidocElementLiA" href="#apidoc.element.papaparse.NetworkStreamer.prototype.constructor">
             function <span class="apidocSignatureSpan">papaparse.NetworkStreamer.prototype.</span>constructor
             <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.papaparse.Parser">module papaparse.Parser</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.papaparse.Parser.Parser">
+            function <span class="apidocSignatureSpan">papaparse.</span>Parser
+            <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.papaparse.ParserHandle">module papaparse.ParserHandle</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.papaparse.ParserHandle.ParserHandle">
+            function <span class="apidocSignatureSpan">papaparse.</span>ParserHandle
+            <span class="apidocSignatureSpan">(_config)</span>
             </a>
 
         </li>
@@ -311,6 +359,32 @@
             <a class="apidocElementLiA" href="#apidoc.element.papaparse.StringStreamer.prototype.constructor">
             function <span class="apidocSignatureSpan">papaparse.StringStreamer.prototype.</span>constructor
             <span class="apidocSignatureSpan">(config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.papaparse.parse">module papaparse.parse</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.papaparse.parse.parse">
+            function <span class="apidocSignatureSpan">papaparse.</span>parse
+            <span class="apidocSignatureSpan">(_input, _config)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.papaparse.unparse">module papaparse.unparse</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.papaparse.unparse.unparse">
+            function <span class="apidocSignatureSpan">papaparse.</span>unparse
+            <span class="apidocSignatureSpan">(_input, _config)</span>
             </a>
 
         </li>
@@ -395,6 +469,37 @@
 		}
 
 	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.papaparse.Gruntfile" id="apidoc.element.papaparse.Gruntfile">
+        function <span class="apidocSignatureSpan">papaparse.</span>Gruntfile
+        <span class="apidocSignatureSpan">(grunt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Gruntfile = function (grunt) {
+	grunt.initConfig({
+		uglify: {
+			options: {
+				preserveComments: &#x27;some&#x27;,
+			},
+			min: {
+				files: {
+					&#x27;papaparse.min.js&#x27;: [&#x27;papaparse.js&#x27;]
+				},
+			},
+		},
+	});
+
+	grunt.loadNpmTasks(&#x27;grunt-contrib-uglify&#x27;);
+
+	grunt.registerTask(&#x27;build&#x27;, [&#x27;uglify&#x27;]);
+	grunt.registerTask(&#x27;default&#x27;, [&#x27;uglify&#x27;]);
+}</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -1395,6 +1500,42 @@
 </div>
 
 <div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.papaparse.Gruntfile" id="apidoc.module.papaparse.Gruntfile">module papaparse.Gruntfile</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.papaparse.Gruntfile.Gruntfile" id="apidoc.element.papaparse.Gruntfile.Gruntfile">
+        function <span class="apidocSignatureSpan">papaparse.</span>Gruntfile
+        <span class="apidocSignatureSpan">(grunt)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">Gruntfile = function (grunt) {
+	grunt.initConfig({
+		uglify: {
+			options: {
+				preserveComments: &#x27;some&#x27;,
+			},
+			min: {
+				files: {
+					&#x27;papaparse.min.js&#x27;: [&#x27;papaparse.js&#x27;]
+				},
+			},
+		},
+	});
+
+	grunt.loadNpmTasks(&#x27;grunt-contrib-uglify&#x27;);
+
+	grunt.registerTask(&#x27;build&#x27;, [&#x27;uglify&#x27;]);
+	grunt.registerTask(&#x27;default&#x27;, [&#x27;uglify&#x27;]);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.papaparse.NetworkStreamer" id="apidoc.module.papaparse.NetworkStreamer">module papaparse.NetworkStreamer</a></h1>
 
 
@@ -1630,6 +1771,343 @@
 			return parseInt(contentRange.substr(contentRange.lastIndexOf(&#x27;/&#x27;) + 1));
 		}
 	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.papaparse.Parser" id="apidoc.module.papaparse.Parser">module papaparse.Parser</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.papaparse.Parser.Parser" id="apidoc.element.papaparse.Parser.Parser">
+        function <span class="apidocSignatureSpan">papaparse.</span>Parser
+        <span class="apidocSignatureSpan">(config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Parser(config)
+	{
+		// Unpack the config object
+		config = config || {};
+		var delim = config.delimiter;
+		var newline = config.newline;
+		var comments = config.comments;
+		var step = config.step;
+		var preview = config.preview;
+		var fastMode = config.fastMode;
+		var quoteChar = config.quoteChar || &#x27;&#x22;&#x27;;
+
+		// Delimiter must be valid
+		if (typeof delim !== &#x27;string&#x27;
+			|| Papa.BAD_DELIMITERS.indexOf(delim) &#x3e; -1)
+			delim = &#x27;,&#x27;;
+
+		// Comment character must be valid
+		if (comments === delim)
+			throw &#x27;Comment character same as delimiter&#x27;;
+		else if (comments === true)
+			comments = &#x27;#&#x27;;
+		else if (typeof comments !== &#x27;string&#x27;
+			|| Papa.BAD_DELIMITERS.indexOf(comments) &#x3e; -1)
+			comments = false;
+
+		// Newline must be valid: \r, \n, or \r\n
+		if (newline != &#x27;\n&#x27; &#x26;&#x26; newline != &#x27;\r&#x27; &#x26;&#x26; newline != &#x27;\r\n&#x27;)
+			newline = &#x27;\n&#x27;;
+
+		// We&#x27;re gonna need these at the Parser scope
+		var cursor = 0;
+		var aborted = false;
+
+		this.parse = function(input, baseIndex, ignoreLastRow)
+		{
+			// For some reason, in Chrome, this speeds things up (!?)
+			if (typeof input !== &#x27;string&#x27;)
+				throw &#x27;Input must be a string&#x27;;
+
+			// We don&#x27;t need to compute some of these every time parse() is called,
+			// but having them in a more local scope seems to perform better
+			var inputLen = input.length,
+				delimLen = delim.length,
+				newlineLen = newline.length,
+				commentsLen = comments.length;
+			var stepIsFunction = typeof step === &#x27;function&#x27;;
+
+			// Establish starting state
+			cursor = 0;
+			var data = [], errors = [], row = [], lastCursor = 0;
+
+			if (!input)
+				return returnable();
+
+			if (fastMode || (fastMode !== false &#x26;&#x26; input.indexOf(quoteChar) === -1))
+			{
+				var rows = input.split(newline);
+				for (var i = 0; i &#x3c; rows.length; i++)
+				{
+					var row = rows[i];
+					cursor += row.length;
+					if (i !== rows.length - 1)
+						cursor += newline.length;
+					else if (ignoreLastRow)
+						return returnable();
+					if (comments &#x26;&#x26; row.substr(0, commentsLen) === comments)
+						continue;
+					if (stepIsFunction)
+					{
+						data = [];
+						pushRow(row.split(delim));
+						doStep();
+						if (aborted)
+							return returnable();
+					}
+					else
+						pushRow(row.split(delim));
+					if (preview &#x26;&#x26; i &#x3e;= preview)
+					{
+						data = data.slice(0, preview);
+						return returnable(true);
+					}
+				}
+				return returnable();
+			}
+
+			var nextDelim = input.indexOf(delim, cursor);
+			var nextNewline = input.indexOf(newline, cursor);
+			var quoteCharRegex = new RegExp(quoteChar+quoteChar, &#x27;g&#x27;);
+
+			// Parser loop
+			for (;;)
+			{
+				// Field has opening quote
+				if (input[cursor] === quoteChar)
+				{
+					// Start our search for the closing quote where the cursor is
+					var quoteSearch = cursor;
+
+					// Skip the opening quote
+					cursor++;
+
+					for (;;)
+					{
+						// Find closing quote
+						var quoteSearch = input.indexOf(quoteChar, quoteSearch+1);
+
+						if (quoteSearch === -1)
+						{
+							if (!ignoreLastRow) {
+								// No closing quote... what a pity
+								errors.push({
+									type: &#x27;Quotes&#x27;,
+									code: &#x27;MissingQuotes&#x27;,
+									message: &#x27;Quoted field unterminated&#x27;,
+									row: data.length,	// row has yet to be inserted
+									index: cursor
+								});
+							}
+							return finish();
+						}
+
+						if (quoteSearch === inputLen-1)
+						{
+							// Closing quote at EOF
+							var value = input.substring(cursor, quoteSearch).replace(quoteCharRegex, quoteChar);
+							return finish(value);
+						}
+
+						// If this quote is escaped, it&#x27;s part of the data; skip it
+						if (input[quoteSearch+1] === quoteChar)
+						{
+							quoteSearch++;
+							continue;
+						}
+
+						if (input[quoteSearch+1] === delim)
+						{
+							// Closing quote followed by delimiter
+							row.push(input.substring(cursor, quoteSearch).replace(quoteCharRegex, quoteChar));
+							cursor = quoteSearch + 1 + delimLen;
+							nextDelim = input.indexOf(delim, cursor);
+							nextNewline = input.indexOf(newline, cursor);
+							break;
+						}
+
+						if (input.substr(quoteSearch+1, newlineLen) === newline)
+						{
+							// Closing quote followed b ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.papaparse.ParserHandle" id="apidoc.module.papaparse.ParserHandle">module papaparse.ParserHandle</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.papaparse.ParserHandle.ParserHandle" id="apidoc.element.papaparse.ParserHandle.ParserHandle">
+        function <span class="apidocSignatureSpan">papaparse.</span>ParserHandle
+        <span class="apidocSignatureSpan">(_config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function ParserHandle(_config)
+	{
+		// One goal is to minimize the use of regular expressions...
+		var FLOAT = /^\s*-?(\d*\.?\d+|\d+\.?\d*)(e[-+]?\d+)?\s*$/i;
+
+		var self = this;
+		var _stepCounter = 0;	// Number of times step was called (number of rows parsed)
+		var _input;				// The input being parsed
+		var _parser;			// The core parser being used
+		var _paused = false;	// Whether we are paused or not
+		var _aborted = false;   // Whether the parser has aborted or not
+		var _delimiterError;	// Temporary state between delimiter detection and processing results
+		var _fields = [];		// Fields are from the header row of the input, if there is one
+		var _results = {		// The last results returned from the parser
+			data: [],
+			errors: [],
+			meta: {}
+		};
+
+		if (isFunction(_config.step))
+		{
+			var userStep = _config.step;
+			_config.step = function(results)
+			{
+				_results = results;
+
+				if (needsHeaderRow())
+					processResults();
+				else	// only call user&#x27;s step function after header row
+				{
+					processResults();
+
+					// It&#x27;s possbile that this line was empty and there&#x27;s no row here after all
+					if (_results.data.length === 0)
+						return;
+
+					_stepCounter += results.data.length;
+					if (_config.preview &#x26;&#x26; _stepCounter &#x3e; _config.preview)
+						_parser.abort();
+					else
+						userStep(_results, self);
+				}
+			};
+		}
+
+		<span class="apidocCodeCommentSpan">/**
+		 * Parses input. Most users won&#x27;t need, and shouldn&#x27;t mess with, the baseIndex
+		 * and ignoreLastRow parameters. They are used by streamers (wrapper functions)
+		 * when an input comes in multiple chunks, like from a file.
+		 */
+</span>		this.parse = function(input, baseIndex, ignoreLastRow)
+		{
+			if (!_config.newline)
+				_config.newline = guessLineEndings(input);
+
+			_delimiterError = false;
+			if (!_config.delimiter)
+			{
+				var delimGuess = guessDelimiter(input, _config.newline);
+				if (delimGuess.successful)
+					_config.delimiter = delimGuess.bestDelimiter;
+				else
+				{
+					_delimiterError = true;	// add error after parsing (otherwise it would be overwritten)
+					_config.delimiter = Papa.DefaultDelimiter;
+				}
+				_results.meta.delimiter = _config.delimiter;
+			}
+			else if(typeof _config.delimiter === &#x27;function&#x27;)
+			{
+				_config.delimiter = _config.delimiter(input);
+				_results.meta.delimiter = _config.delimiter;
+			}
+
+			var parserConfig = copy(_config);
+			if (_config.preview &#x26;&#x26; _config.header)
+				parserConfig.preview++;	// to compensate for header row
+
+			_input = input;
+			_parser = new Parser(parserConfig);
+			_results = _parser.parse(_input, baseIndex, ignoreLastRow);
+			processResults();
+			return _paused ? { meta: { paused: true } } : (_results || { meta: { paused: false } });
+		};
+
+		this.paused = function()
+		{
+			return _paused;
+		};
+
+		this.pause = function()
+		{
+			_paused = true;
+			_parser.abort();
+			_input = _input.substr(_parser.getCharIndex());
+		};
+
+		this.resume = function()
+		{
+			_paused = false;
+			self.streamer.parseChunk(_input);
+		};
+
+		this.aborted = function ()
+		{
+			return _aborted;
+		};
+
+		this.abort = function()
+		{
+			_aborted = true;
+			_parser.abort();
+			_results.meta.aborted = true;
+			if (isFunction(_config.complete))
+				_config.complete(_results);
+			_input = &#x27;&#x27;;
+		};
+
+		function processResults()
+		{
+			if (_results &#x26;&#x26; _delimiterError)
+			{
+				addError(&#x27;Delimiter&#x27;, &#x27;UndetectableDelimiter&#x27;, &#x27;Unable to auto-detect delimiting character; defaulted to \&#x27;&#x27;+Papa.DefaultDelimiter
++&#x27;\&#x27;&#x27;);
+				_delimiterError = false;
+			}
+
+			if (_config.skipEmptyLines)
+			{
+				for (var i = 0; i &#x3c; _results.data.length; i++)
+					if (_results.data[i].length === 1 &#x26;&#x26; _results.data[i][0] === &#x27;&#x27;)
+						_results.data.splice(i--, 1);
+			}
+
+			if (needsHeaderRow())
+				fillHeaderFields();
+
+			return applyHeaderAndDynamicTyping();
+		}
+
+		function needsHeaderRow()
+		{
+			return _config.header &#x26;&#x26; _fields.length === 0;
+		}
+
+		function fillHeaderFields()
+		{
+			if (!_results)
+				return;
+			for (var i = 0; needsHeaderRow() &#x26;&#x26; i &#x3c; _results.data.length; i++)
+				for (var j = 0; j &#x3c; _results.data[i].length; j++)
+					_fields.push(_results.data[i][j]);
+			_results.data.spli ...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
@@ -1880,6 +2358,267 @@
 			return this.parseChunk(chunk);
 		}
 	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.papaparse.parse" id="apidoc.module.papaparse.parse">module papaparse.parse</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.papaparse.parse.parse" id="apidoc.element.papaparse.parse.parse">
+        function <span class="apidocSignatureSpan">papaparse.</span>parse
+        <span class="apidocSignatureSpan">(_input, _config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function CsvToJson(_input, _config)
+	{
+		_config = _config || {};
+		_config.dynamicTyping = _config.dynamicTyping || false;
+
+		if (_config.worker &#x26;&#x26; Papa.WORKERS_SUPPORTED)
+		{
+			var w = newWorker();
+
+			w.userStep = _config.step;
+			w.userChunk = _config.chunk;
+			w.userComplete = _config.complete;
+			w.userError = _config.error;
+
+			_config.step = isFunction(_config.step);
+			_config.chunk = isFunction(_config.chunk);
+			_config.complete = isFunction(_config.complete);
+			_config.error = isFunction(_config.error);
+			delete _config.worker;	// prevent infinite loop
+
+			w.postMessage({
+				input: _input,
+				config: _config,
+				workerId: w.id
+			});
+
+			return;
+		}
+
+		var streamer = null;
+		if (typeof _input === &#x27;string&#x27;)
+		{
+			if (_config.download)
+				streamer = new NetworkStreamer(_config);
+			else
+				streamer = new StringStreamer(_config);
+		}
+		else if (_input.readable === true &#x26;&#x26; typeof _input.read === &#x27;function&#x27; &#x26;&#x26; typeof _input.on === &#x27;function&#x27;)
+		{
+			streamer = new ReadableStreamStreamer(_config);
+		}
+		else if ((global.File &#x26;&#x26; _input instanceof File) || _input instanceof Object)	// ...Safari. (see issue #106)
+			streamer = new FileStreamer(_config);
+
+		return streamer.stream(_input);
+	}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+				f.instanceConfig.complete = function(results)
+				{
+					if (isFunction(userCompleteFunc))
+						userCompleteFunc(results, f.file, f.inputElem);
+					fileComplete();
+				};
+
+				Papa.<span class="apidocCodeKeywordSpan">parse</span>(f.file, f.instanceConfig);
+			}
+
+			function error(name, file, elem, reason)
+			{
+				if (isFunction(options.error))
+					options.error({name: name}, file, elem, reason);
+			}
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.papaparse.unparse" id="apidoc.module.papaparse.unparse">module papaparse.unparse</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.papaparse.unparse.unparse" id="apidoc.element.papaparse.unparse.unparse">
+        function <span class="apidocSignatureSpan">papaparse.</span>unparse
+        <span class="apidocSignatureSpan">(_input, _config)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function JsonToCsv(_input, _config)
+	{
+		var _output = &#x27;&#x27;;
+		var _fields = [];
+
+		// Default configuration
+
+		<span class="apidocCodeCommentSpan">/** whether to surround every datum with quotes */
+</span>		var _quotes = false;
+
+		/** whether to write headers */
+		var _writeHeader = true;
+
+		/** delimiting character */
+		var _delimiter = &#x27;,&#x27;;
+
+		/** newline character(s) */
+		var _newline = &#x27;\r\n&#x27;;
+
+		/** quote character */
+		var _quoteChar = &#x27;&#x22;&#x27;;
+
+		unpackConfig();
+
+		var quoteCharRegex = new RegExp(_quoteChar, &#x27;g&#x27;);
+
+		if (typeof _input === &#x27;string&#x27;)
+			_input = JSON.parse(_input);
+
+		if (_input instanceof Array)
+		{
+			if (!_input.length || _input[0] instanceof Array)
+				return serialize(null, _input);
+			else if (typeof _input[0] === &#x27;object&#x27;)
+				return serialize(objectKeys(_input[0]), _input);
+		}
+		else if (typeof _input === &#x27;object&#x27;)
+		{
+			if (typeof _input.data === &#x27;string&#x27;)
+				_input.data = JSON.parse(_input.data);
+
+			if (_input.data instanceof Array)
+			{
+				if (!_input.fields)
+					_input.fields =  _input.meta &#x26;&#x26; _input.meta.fields;
+
+				if (!_input.fields)
+					_input.fields =  _input.data[0] instanceof Array
+									? _input.fields
+									: objectKeys(_input.data[0]);
+
+				if (!(_input.data[0] instanceof Array) &#x26;&#x26; typeof _input.data[0] !== &#x27;object&#x27;)
+					_input.data = [_input.data];	// handles input like [1,2,3] or [&#x27;asdf&#x27;]
+			}
+
+			return serialize(_input.fields || [], _input.data || []);
+		}
+
+		// Default (any valid paths should return before this)
+		throw &#x27;exception: Unable to serialize unrecognized input&#x27;;
+
+
+		function unpackConfig()
+		{
+			if (typeof _config !== &#x27;object&#x27;)
+				return;
+
+			if (typeof _config.delimiter === &#x27;string&#x27;
+				&#x26;&#x26; _config.delimiter.length === 1
+				&#x26;&#x26; Papa.BAD_DELIMITERS.indexOf(_config.delimiter) === -1)
+			{
+				_delimiter = _config.delimiter;
+			}
+
+			if (typeof _config.quotes === &#x27;boolean&#x27;
+				|| _config.quotes instanceof Array)
+				_quotes = _config.quotes;
+
+			if (typeof _config.newline === &#x27;string&#x27;)
+				_newline = _config.newline;
+
+			if (typeof _config.quoteChar === &#x27;string&#x27;)
+				_quoteChar = _config.quoteChar;
+
+			if (typeof _config.header === &#x27;boolean&#x27;)
+				_writeHeader = _config.header;
+		}
+
+
+		/** Turns an object&#x27;s keys into an array */
+		function objectKeys(obj)
+		{
+			if (typeof obj !== &#x27;object&#x27;)
+				return [];
+			var keys = [];
+			for (var key in obj)
+				keys.push(key);
+			return keys;
+		}
+
+		/** The double for loop that iterates the data and writes out a CSV string including header row */
+		function serialize(fields, data)
+		{
+			var csv = &#x27;&#x27;;
+
+			if (typeof fields === &#x27;string&#x27;)
+				fields = JSON.parse(fields);
+			if (typeof data === &#x27;string&#x27;)
+				data = JSON.parse(data);
+
+			var hasHeader = fields instanceof Array &#x26;&#x26; fields.length &#x3e; 0;
+			var dataKeyedByField = !(data[0] instanceof Array);
+
+			// If there a header row, write it first
+			if (hasHeader &#x26;&#x26; _writeHeader)
+			{
+				for (var i = 0; i &#x3c; fields.length; i++)
+				{
+					if (i &#x3e; 0)
+						csv += _delimiter;
+					csv += safe(fields[i], i);
+				}
+				if (data.length &#x3e; 0)
+					csv += _newline;
+			}
+
+			// Then write out the data
+			for (var row = 0; row &#x3c; data.length; row++)
+			{
+				var maxCol = hasHeader ? fields.length : data[row].length;
+
+				for (var col = 0; col &#x3c; maxCol; col++)
+				{
+					if (col &#x3e; 0)
+						csv += _delimiter;
+					var colIdx = hasHeader &#x26;&#x26; dataKeyedByField ? fields[col] : col;
+					csv += safe(data[row][colIdx], col);
+				}
+
+				if (row &#x3c; data.length - 1)
+					csv += _newline;
+			}
+
+			return csv;
+		}
+
+		/** Encloses a value around quotes if needed (makes a value safe for CSV insertion) */
+		function safe(str, col)
+		{
+			if (typeof str === &#x27;undefined&#x27; || str === null)
+				return &#x27;&#x27;;
+
+			str = str.toString().replace(quoteCharRegex, _quoteChar+_quoteChar);
+
+			var needsQuotes = (typeof _quotes === &#x27;boolean&#x27; &#x26;&#x26; _quotes)
+							|| (_quotes instanceof Array &#x26;&#x26; _quotes[col])
+							|| hasAny(str, Papa.BAD_DELIMITERS)
+							|| str.indexOf(_delimiter) &#x3e; -1
+							|| str.charAt(0) === &#x27; &#x27;
+							|| str.charAt(str.length - 1) === &#x27; &#x27;;
+
+			return needsQuotes ? _quoteChar + str + _quoteChar : str;
+		}
+
+		function hasAny(str, substring ...</pre></li>
     <li>example usage<pre class="apidocCodePre">n/a</pre></li>
     </ul>
 
