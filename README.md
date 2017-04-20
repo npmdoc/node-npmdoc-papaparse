@@ -1,4 +1,7 @@
-# api documentation for  [papaparse (v4.2.0)](http://papaparse.com)  [![npm package](https://img.shields.io/npm/v/npmdoc-papaparse.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-papaparse) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-papaparse.svg)](https://travis-ci.org/npmdoc/node-npmdoc-papaparse)
+# npmdoc-papaparse
+
+#### api documentation for  [papaparse (v4.2.0)](http://papaparse.com)  [![npm package](https://img.shields.io/npm/v/npmdoc-papaparse.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-papaparse) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-papaparse.svg)](https://travis-ci.org/npmdoc/node-npmdoc-papaparse)
+
 #### Fast and powerful CSV parser for the browser that supports web workers and streaming large files. Converts CSV to JSON and JSON to CSV.
 
 [![NPM](https://nodei.co/npm/papaparse.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/papaparse)
@@ -18,33 +21,9 @@
 ```json
 
 {
-    "author": {
-        "name": "Matthew Holt",
-        "url": "https://twitter.com/mholt6"
-    },
-    "bugs": {
-        "url": "https://github.com/mholt/PapaParse/issues"
-    },
-    "dependencies": {},
+    "name": "papaparse",
+    "version": "4.2.0",
     "description": "Fast and powerful CSV parser for the browser that supports web workers and streaming large files. Converts CSV to JSON and JSON to CSV.",
-    "devDependencies": {
-        "chai": "^3.0.0",
-        "connect": "^3.3.3",
-        "grunt": "^0.4.5",
-        "grunt-contrib-uglify": "^0.6.0",
-        "mocha": "^2.2.5",
-        "mocha-phantomjs": "^3.5.4",
-        "open": "0.0.5",
-        "phantomjs": "1.9.1 - 1.9.7-15",
-        "serve-static": "^1.7.1"
-    },
-    "directories": {},
-    "dist": {
-        "shasum": "ac5bed7de39445dabb6616a507024b8b88eee7c3",
-        "tarball": "https://registry.npmjs.org/papaparse/-/papaparse-4.2.0.tgz"
-    },
-    "gitHead": "fd6431e385468ef3c1c64f7ccb4c47c435631e25",
-    "homepage": "http://papaparse.com",
     "keywords": [
         "csv",
         "parser",
@@ -67,6 +46,15 @@
         "multi-threaded",
         "jquery-plugin"
     ],
+    "homepage": "http://papaparse.com",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mholt/PapaParse.git"
+    },
+    "author": {
+        "name": "Matthew Holt",
+        "url": "https://twitter.com/mholt6"
+    },
     "licenses": [
         {
             "type": "MIT",
@@ -74,27 +62,23 @@
         }
     ],
     "main": "papaparse.js",
-    "maintainers": [
-        {
-            "name": "mholt"
-        },
-        {
-            "name": "pokoli"
-        }
-    ],
-    "name": "papaparse",
-    "optionalDependencies": {},
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/mholt/PapaParse.git"
+    "devDependencies": {
+        "chai": "^3.0.0",
+        "connect": "^3.3.3",
+        "grunt": "^0.4.5",
+        "grunt-contrib-uglify": "^0.6.0",
+        "mocha": "^2.2.5",
+        "mocha-phantomjs": "^3.5.4",
+        "open": "0.0.5",
+        "phantomjs": "1.9.1 - 1.9.7-15",
+        "serve-static": "^1.7.1"
     },
     "scripts": {
-        "test": "npm run test-node && npm run test-phantomjs",
         "test-browser": "node tests/test.js",
+        "test-phantomjs": "node tests/test.js --phantomjs",
         "test-node": "mocha tests/node-tests.js tests/test-cases.js",
-        "test-phantomjs": "node tests/test.js --phantomjs"
-    },
-    "version": "4.2.0"
+        "test": "npm run test-node && npm run test-phantomjs"
+    }
 }
 ```
 
